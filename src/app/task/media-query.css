@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+    
+.textArea i{
+    font-size: 18px;
+}
+.task-img-part i{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.task-text-part span{
+    font-size: 16px;
+}
+.task-text-part p{
+    font-size: 13px;
+}
+.heading img{
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    margin-right: 25%;
+} 
+
+.cardView{
+    margin-top: 5%;
+}
+.task-complete-part i{
+    font-size: 25px;
+}
+}

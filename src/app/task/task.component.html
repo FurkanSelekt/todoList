@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="heading" *ngIf="!showaddTask">
+        <div class="text-part">
+            <h3>Hello Floyed Mullins</h3>
+            <p>You Have {{taskLength}} Tasks</p>
+        </div>
+        <div class="img-part">
+            <img src="../../assets/User_icon.png" alt="image">
+        </div>
+    </div>
+    <div class="task" *ngIf="!showaddTask">
+        <div class="cardView" mwlDraggable (dragEnd)="dragEnd($event,i)" (dragEnd)="onDragEnd($event)"
+            (dragStart)="onDragStart($event)" *ngFor="let task of task; let i=index">
+            <div *ngIf="task.completed" class="task-complete-part">
+                    <i class="fa fa-check-circle-o"></i>
+                </div>
+            <div class="task-text-part">
+                <span>{{task.text}}</span>
+                <p>{{task.date}}</p>
+            </div>
+            <div *ngIf="!task.completed" class="task-img-part">
+                <i class="fa fa-clock-o"></i>
+            </div>
+        </div>
+    </div>
+    <div class="addTask" *ngIf="showaddTask">
+
+        <div class="textArea">
+            <i (click)="_showAddTask()" class="fa fa-close"></i>
+            <input type="text" name="new_tast" [(ngModel)]="new_task_value" placeholder="What would you like to add ?"
+                autofocus>
+        </div>
+        <button class="blue scale" (click)="_addTask(new_task_value)">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+    <div class="action" mwlDroppable (drop)="onDrop($event)" *ngIf="!showaddTask">
+        <button class="blue" (click)="_showAddTask()" *ngIf="!showHide">
+            <i class="fa fa-plus"></i>
+        </button>
+        <button class="red" *ngIf="showHide"><i class="fa fa-trash"></i></button>
+    </div>
+</div>

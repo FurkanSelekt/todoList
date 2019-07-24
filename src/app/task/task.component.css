@@ -1,0 +1,177 @@
+.main{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.heading{
+    width: 100%;
+    display: block;
+}
+/* .heading .text-part, .heading .img-part{
+    display: inline-block;
+    vertical-align: top;
+} */
+.text-part{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+    width: 78%;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-part h3, .text-part p{
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+    margin-left: 5% !important;
+    margin-right: 0 !important;
+    color: #333
+}
+.img-part{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+.heading img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 25%;
+    background-color: #fff;
+    box-shadow: 0 0 5px #F3F3F3;
+    -webkit-box-shadow: 0 0 5px #F3F3F3;
+    float: right;
+} 
+.task{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.addTask{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.textArea{
+    width: 90%;
+    margin-left: 5%;
+    height: 200px;
+}
+.textArea input{
+    width: 100%;
+    font-size: 20px;
+    background-color: #f9f9f9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+.cardView{
+    width: 90%;
+    height: 80px;
+    margin-left: 5%;
+    margin-top: 2%;
+    /* padding: 1%;  */
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    /* border: 1px solid #333; */
+    -webkit-box-shadow: 0 0 10px #f2f2f2;
+        box-shadow: 0 0 10px #f2f2f2;
+    
+}
+.cardView:hover{
+    -webkit-box-shadow: 0 0 10px #ccc;
+        box-shadow: 0 0 10px #ccc;
+    
+}
+.cardView .task-text-part{
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.task-text-part span{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-top: 15px;
+    color: #555
+}
+.task-text-part p{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 18px;
+    font-size: 17px;
+    color: #999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cardView .task-img-part{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+.cardView .task-complete-part{
+    display: inline-block;
+    background-color: green;
+    vertical-align: top;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+.task-img-part i{
+    font-size: 25px;
+    margin-top: 25px;
+    color: #555;
+}
+.task-complete-part i{
+    font-size: 35px;
+
+    font-weight: 100;
+    margin-top: 25px;
+    color: #FFF;
+}
+.action{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.action button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.blue{
+    background-color: cornflowerblue;
+}
+.red{
+    background-color: darkred
+}
+.red:hover{
+    background-color: #333;
+}
+.addTask .scale{
+    width: 90%;
+    height: 80px;
+    font-size: 20px;
+    margin-left: 5%;
+    border: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.textArea i{
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
